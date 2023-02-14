@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div id="box4"></div>
+<div id="header"><h1>ENOCK</h1></div>
+<div class="box5"></div>
+<span>This is an inline element.</span><!--an inline element is used for small elements
+within the text thats means that they dont take the width or height prop-->
+<div class="box6"></div>
+<div class="box7"></div>
+<div class="box8"></div>
+<div class="box9"></div>
+<div class="outer">
+    <div class="inner">
+        <!--z-index is used to define the stack order in html eg the red colour will
+        appear before blue since it has higher index than blue-->
+<style>      
+  .box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+    
+  }
+  .box2 {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+  }
+  </style>
+  
+<!--CSS selectors they Selects all elements with a particular class attribute
+in the example below are different type of selectors using class selectors and ids selectors
+ pseudocodes selectors
+NB in class selector we target class by(.) and in ids we target using(#)-->
+<style> 
+    .box3{
+        background-color: brown;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100px;
+
+    }
+</style>
+<!--Opacity in Css is giving the elemt transapensy rem in opacity 
+the highest opacity is 1,while the lowest is 0-->
+<style>
+    #box4{
+        background-color: black;
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+    }
+    #header :hover{
+background-color: aqua;
+color: blueviolet;
+font-size: 24px;
+
+    }
+</style>
+<!--vh and vw allows you to resize the browser in aspect of the browser view port
+in short i can say mainly its used to give reponsivness-->
+<style>
+   .box5{
+    width: 50vw;
+    height: 50vh;
+    background-color: blue;
+   } 
+</style>
+<!--inline block is similar to iniline expect that it can
+se the width height and it does not flow within surrounding text -->
+    <style>
+        .box6{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: green;
+        }
+    </style>
+    <!--A block element takes up the full width of its container
+         and starts on a new line-->
+    <style>
+         .box7{
+            display: block;
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            
+        } 
+    </style>
+    <style>
+        .box8{
+            width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 20px;
+  box-sizing: border-box;   
+        }
+    </style>
+.<style>
+    .box9{
+        width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 20px;
+  box-sizing: content-box;
+    }
+</style>
+<style>
+    .outer{
+        width: 100px;
+        height: 100px;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:lawngreen;
+  z-index:1 ;
+  
+    }
+    .inner{
+    width: 50px;
+        height: 50px;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:gold;
+  z-index: 2;
+  }
+</style>
+</body>
+</html>
